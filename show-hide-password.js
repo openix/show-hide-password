@@ -1,5 +1,5 @@
 // Name      : Show Hide Password
-// Version   : 1.0.1
+// Version   : 1.0.2
 // Developer : Ekrem KAYA
 // Website   : https://openix.io
 // GitHub    : https://github.com/openix/show-hide-password
@@ -14,16 +14,20 @@
     // Check bootstrap input group
     var inputGroupCheck = element.parent().hasClass('input-group');
 
+    // Bootstrap v5
+    var formFloatingCheck = element.parent().hasClass('form-floating');
+
     if (inputGroupCheck) {
       element.css({
         borderTopRightRadius: '4px',
         borderBottomRightRadius: '4px'
       });
-    } else {
+    } else if (!formFloatingCheck) {
       element.wrap('<div class="password-container"></div>');
     }
 
-    element.after('<span class="show-hide-password"><i class="fa fa-eye"></i></span>');
+    // FontAwesome v6
+    element.after('<span class="show-hide-password"><i class="fa-solid fa-eye"></i></span>');
 
     // Add postion css password container
     $('.password-container').css({position: 'relative'});
@@ -38,7 +42,7 @@
       right: '0',
       height: element.outerHeight(true) - 2,
       marginTop: '1px',
-      padding: '6px 11px',
+      padding: formFloatingCheck ? '18px 12px' : '6px 11px',
       //borderLeft: '1px solid #CCC',
       cursor: 'pointer',
       zIndex : '999',
