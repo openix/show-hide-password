@@ -6,7 +6,7 @@
 - Add show hide password icon in form input element.
 - Bootstrap default input and input-group element supports.
 - The icon appears when you start enter the password.
-- Min js file size: 1.13KB
+- Min js file size: 1.21KB
 
 [DEMO PAGE](https://3x.opencart-templates.net/index.php?route=account/login) | [OPENCART EXTENSION](https://openix.io/en/opencart-show-hide-password)
 
@@ -16,7 +16,7 @@
 
 - jQuery v1.7.x and newer
 - Bootstrap v3.x and newer
-- Font Awesome v4.x and newer
+- FontAwesome v6.x and newer
 
 # Usage
 
