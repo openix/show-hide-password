@@ -8,7 +8,7 @@
 - The icon appears when you start enter the password.
 - Min js file size: 1.21KB
 
-[DEMO PAGE](https://3x.opencart-templates.net/index.php?route=account/login) | [OPENCART EXTENSION](https://openix.io/en/opencart-show-hide-password)
+[DEMO PAGE](https://openix.io/tr/catalog/preview?aid=22) | [OPENCART EXTENSION](https://openix.io/en/opencart-show-hide-password)
 
 ![jQuery Show Hide Password](screenshot.jpg)
 
