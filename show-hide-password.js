@@ -1,5 +1,5 @@
 // Name      : Show Hide Password
-// Version   : 1.0.2
+// Version   : 1.0.3
 // Developer : Ekrem KAYA
 // Website   : https://openix.io
 // GitHub    : https://github.com/openix/show-hide-password
@@ -46,7 +46,7 @@
       //borderLeft: '1px solid #CCC',
       cursor: 'pointer',
       zIndex : '999',
-      color : 'black'
+      color : ($('html').attr('data-bs-theme') == 'dark') ? 'white' : 'black'
     });
 
     // Show eye icon when you start entering password
